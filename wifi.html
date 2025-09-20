@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Connect - Modern</title>
+    <link rel="stylesheet" href="wifi.css"/>
+</head>
+ <script src="wifi.js" type="text/javascript" charset="utf-8"></script>
+<body>
+    <div class="bg-elements" id="bgElements"></div>
+    
+    <div class="wifi-container">
+        <div class="wifi-header">
+            <div class="wifi-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12,3C16.97,3 21,7.03 21,12C21,16.97 16.97,21 12,21C7.03,21 3,16.97 3,12C3,7.03 7.03,3 12,3M12,5C8.14,5 5,8.14 5,12C5,15.86 8.14,19 12,19C15.86,19 19,15.86 19,12C19,8.14 15.86,5 12,5M12,7C15.04,7 17.5,9.46 17.5,12.5C17.5,15.54 15.04,18 12,18C8.96,18 6.5,15.54 6.5,12.5C6.5,9.46 8.96,7 12,7M12,9C10.07,9 8.5,10.57 8.5,12.5C8.5,14.43 10.07,16 12,16C13.93,16 15.5,14.43 15.5,12.5C15.5,10.57 13.93,9 12,9Z"/>
+                </svg>
+            </div>
+            <h1>WINDAY WIFI</h1>
+            <span class="subtitle">Connect to network</span>
+            <span class="network-name">SECURE_WIFI</span>
+        </div>
+        
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password</label>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Enter your password">
+                <button class="toggle-password" onclick="togglePassword()"></button>
+            </div>
+        </div>
+        
+        <button class="btn" id="loginBtn" onclick="login()">CONNECT</button>
+        
+        <div id="statusMessage" class="status"></div>
+        
+        <div class="footer-links">
+            <a href="#">Forgot password?</a> • 
+            <a href="#">Network info</a>
+        </div>
+    </div>
+</body>
+</html>
